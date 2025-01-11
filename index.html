@@ -625,7 +625,7 @@
         }
         
         function transferCoins(walletAddress, amount) {
-            fetch('http://192.168.1.36:5000/transfer_coins', {
+            fetch('https://192.168.1.36:5000/transfer_coins', {  // Use HTTPS here
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -648,9 +648,6 @@
                 alert('Произошла ошибка при переводе монет.');
             });
         }
-
-        startButton.addEventListener('click', startGame);
-        restartButton.addEventListener('click', restartGame);
     </script>
 </body>
 </html>
