@@ -623,7 +623,7 @@
                 });
             }
         }
-        
+
         function transferCoins(walletAddress, amount) {
             fetch('http://192.168.1.36:5000/transfer_coins', {  // Use HTTP here
                 method: 'POST',
@@ -648,6 +648,9 @@
                 alert('Произошла ошибка при переводе монет.');
             });
         }
+
+        startButton.addEventListener('click', startGame);
+        restartButton.addEventListener('click', restartGame);
     </script>
 </body>
 </html>
